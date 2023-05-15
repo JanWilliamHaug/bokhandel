@@ -12,7 +12,7 @@ Bokhandelapplikasjon bygget med Spring.
 1. Klon repositoriet:
 
    ```bash
-   git clone https://github.com/ditt-brukernavn/bokhandel.git
+   git clone https://github.com/JanWilliamHaug/bokhande.git
 
 2. Bygg applikasjonen:
 
