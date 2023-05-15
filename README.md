@@ -32,7 +32,9 @@ mvn spring-boot:run
 Hent alle bøker: GET /api/books <br> 
 Hent en bok etter ID: GET /api/books/{id} <br> 
 Legg til en ny bok: POST /api/books <br> 
-Eksempel på forespørselskropp: <br> 
+
+
+## Eksempel på forespørselskropp: <br> 
 {
   "id": 1, <br> 
   "title": "Boktittel", <br> 
