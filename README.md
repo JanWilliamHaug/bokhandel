@@ -1,4 +1,4 @@
-# Bokhandel
+# Bokhandel / Bibliotek
 
 Bokhandelapplikasjon bygget med Spring.
 
