@@ -64,4 +64,6 @@ $books | ForEach-Object {
 
     curl http://localhost:8080/api/books/2 
 
+<br> 
+Denne applikasjonen er bygget ved å følge MVC (Model-View-Controller) arkitekturmønsteret.
 
