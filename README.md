@@ -29,12 +29,32 @@ mvn spring-boot:run
 Åpne nettleseren og gå til http://localhost:8080.
 
 ## API-endepunkter
-Hent alle bøker: GET /api/books
-Hent en bok etter ID: GET /api/books/{id}
-Legg til en ny bok: POST /api/books
-Eksempel på forespørselskropp:
+Hent alle bøker: GET /api/books <br> 
+Hent en bok etter ID: GET /api/books/{id} <br> 
+Legg til en ny bok: POST /api/books <br> 
+Eksempel på forespørselskropp: <br> 
 {
-  "id": 1,
-  "title": "Boktittel",
-  "author": "Bokforfatter"
+  "id": 1, <br> 
+  "title": "Boktittel", <br> 
+  "author": "Bokforfatter" <br> 
 }
+
+## Legge til bøker fra Book.json eksempel:
+$books = Get-Content -Raw -Path "C:\Users\Willi\Desktop\bokhandel\bokhandel\book.json" | ConvertFrom-Json
+
+$books | ForEach-Object {
+    $jsonData = $_ | ConvertTo-Json
+    Invoke-RestMethod -Uri "http://localhost:8080/api/books" -Method POST -ContentType "application/json" -Body $jsonData
+}
+
+
+- Hent alle bøker: `GET /api/books`
+
+   Bruk `curl`-kommandoen eller et lignende verktøy for å sende en GET-forespørsel og hente alle bøkene fra API-et.
+
+   Eksempel med `curl`:
+
+   ```bash
+   curl http://localhost:8080/api/books
+
+
