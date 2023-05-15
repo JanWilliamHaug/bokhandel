@@ -47,14 +47,20 @@ $books | ForEach-Object {
     Invoke-RestMethod -Uri "http://localhost:8080/api/books" -Method POST -ContentType "application/json" -Body $jsonData
 }
 
-
-- Hent alle bøker: `GET /api/books`
+## Hent alle bøker: `GET /api/books`
 
    Bruk `curl`-kommandoen eller et lignende verktøy for å sende en GET-forespørsel og hente alle bøkene fra API-et.
 
-   Eksempel med `curl`:
+   Med `curl`:
 
-   ```bash
    curl http://localhost:8080/api/books
+
+## Hent en bok etter ID: `GET /api/books/{id}`
+
+   Bruk `curl`-kommandoen eller et lignende verktøy for å sende en GET-forespørsel og hente en spesifikk bok basert på dens ID fra API-et.
+
+   Med `curl`:
+
+    curl http://localhost:8080/api/books/2 
 
 
