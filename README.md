@@ -16,7 +16,7 @@ Bokhandelapplikasjon bygget med Spring.
 
 2. Bygg applikasjonen:
 
-cd bokhandel
+cd bokhandel <br> 
 mvn clean install
 
 3. Kjør applikasjonen:
