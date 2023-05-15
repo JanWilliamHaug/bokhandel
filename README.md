@@ -11,17 +11,16 @@ Bokhandelapplikasjon bygget med Spring.
 
 1. Klon repositoriet:
 
-   ```bash
    git clone https://github.com/JanWilliamHaug/bokhandel.git
 
 2. Bygg applikasjonen:
 
-cd bokhandel <br> 
-mvn clean install
+ cd bokhandel <br> 
+ mvn clean install
 
 3. Kjør applikasjonen:
 
-mvn spring-boot:run
+ mvn spring-boot:run
 
 
 4. Åpne applikasjonen:
@@ -35,7 +34,7 @@ Legg til en ny bok: POST /api/books <br>
 
 
 ## Eksempel på forespørselskropp: <br> 
-{
+{<br> 
   "id": 1, <br> 
   "title": "Boktittel", <br> 
   "author": "Bokforfatter" <br> 
@@ -49,7 +48,7 @@ $books | ForEach-Object {
     Invoke-RestMethod -Uri "http://localhost:8080/api/books" -Method POST -ContentType "application/json" -Body $jsonData
 }
 
-## Hent alle bøker: `GET /api/books`
+## Hent alle bøker: `GET /api/books` eksempel:
 
    Bruk `curl`-kommandoen eller et lignende verktøy for å sende en GET-forespørsel og hente alle bøkene fra API-et.
 
@@ -57,7 +56,7 @@ $books | ForEach-Object {
 
    curl http://localhost:8080/api/books
 
-## Hent en bok etter ID: `GET /api/books/{id}`
+## Hent en bok etter ID: `GET /api/books/{id}` eksempel:
 
    Bruk `curl`-kommandoen eller et lignende verktøy for å sende en GET-forespørsel og hente en spesifikk bok basert på dens ID fra API-et.
 
