@@ -11,26 +11,26 @@ Bokhandelapplikasjon bygget med Spring.
 
 1. Klon repositoriet:
 
-   git clone https://github.com/JanWilliamHaug/bokhandel.git
+   - git clone https://github.com/JanWilliamHaug/bokhandel.git
 
 2. Bygg applikasjonen:
 
- cd bokhandel <br> 
- mvn clean install
+ - cd bokhandel <br> 
+ - mvn clean install
 
 3. Kjør applikasjonen:
 
- mvn spring-boot:run
+ - mvn spring-boot:run
 
 
 4. Åpne applikasjonen:
 
-Åpne nettleseren og gå til http://localhost:8080.
+- Åpne nettleseren og gå til http://localhost:8080.
 
 ## API-endepunkter
-Hent alle bøker: GET /api/books <br> 
-Hent en bok etter ID: GET /api/books/{id} <br> 
-Legg til en ny bok: POST /api/books <br> 
+- Hent alle bøker: GET /api/books <br> 
+- Hent en bok etter ID: GET /api/books/{id} <br> 
+- Legg til en ny bok: POST /api/books <br> 
 
 
 ## Eksempel på forespørselskropp: <br> 
